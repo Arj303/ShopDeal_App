@@ -28,7 +28,8 @@ class _BuyPageState extends State<BuyPage> {
     final controller=Provider.of<UserController>(context);
     return Scaffold(
         appBar: AppBar(
-          title: Text("Welcome ${controller.name}"),
+          backgroundColor: Colors.blue,
+          title: Text("Welcome ${controller.name}",style: TextStyle(color: Colors.white),),
         ),
         body:StreamBuilder(
           stream: FirebaseFirestore.instance.collection("Post").where("userId",isNotEqualTo: uid).snapshots(),

@@ -30,7 +30,8 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
 
       appBar: AppBar(
-        title: const Text('Profile'),
+        backgroundColor: Colors.blue,
+        title: const Text('Profile',style: TextStyle(color: Colors.white),),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -51,7 +52,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   Padding(
         
                     padding: const EdgeInsets.only(right: 20),
-                    child: ElevatedButton(
+                    child: MaterialButton(
+                      color: Colors.blue,
                         onPressed: (){
                           Navigator.push(
                           context,
@@ -60,7 +62,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           )),
                         );
                           },
-                        child: Text("Edit Profile")
+                        child: Text("Edit Profile",style: TextStyle(color: Colors.white),)
                     ),
                   ),
                 ],
@@ -90,31 +92,36 @@ class _ProfilePageState extends State<ProfilePage> {
               SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: ElevatedButton(
+                child: MaterialButton(
+                  color: Colors.blue,
                     onPressed: (){
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => SellPage()),
                       );
                     },
-                    child: Text("Sell/Rent")),
+                    child: Text("Sell/Rent",style: TextStyle(color: Colors.white),)),
               ),
 
         Padding(
           padding: const EdgeInsets.all(16.0),
-          child: ElevatedButton(onPressed: (){
+          child: MaterialButton(
+            color: Colors.blue,
+              onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context) => BuyPageUser(),));
-          }, child: Text("History")),
+          }, child: Text("History",style: TextStyle(color: Colors.white),)),
         ),
               SizedBox(
                 height: 50,
               ),
         Padding(
           padding: const EdgeInsets.all(16.0),
-          child: ElevatedButton(onPressed: ()async{
+          child: MaterialButton(
+            color: Colors.blue,
+              onPressed: ()async{
             FirebaseAuth.instance.signOut().then((value) => Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPage(),)));
 
-          }, child: Text("logout")),
+          }, child: Text("logout",style: TextStyle(color: Colors.white),)),
         )
         
             ],
