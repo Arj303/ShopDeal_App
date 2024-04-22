@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "86700303682",
+    "project_id": "buyrent-9503b",
+    "storage_bucket": "buyrent-9503b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86700303682:android:75519e9d64948fe7a9d4db",
+        "android_client_info": {
+          "package_name": "com.example.buyrent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1l_WaUw2kJ7HJemXObO4ZhqkGn54pArI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
